@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:on_boarding_screen/on_boarding_screen.dart';
 import 'package:on_boarding_screen/splash_screen.dart';
 
 void main() {
@@ -9,7 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SplashScreen(),
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/': (context) => SplashScreen(),
+        'onboarding': (context) => OnBoarding()
+      },
     );
   }
 }
