@@ -10,7 +10,6 @@ class QuotesViewModel extends ChangeNotifier{
   void getThem()async{
     final them = await QuotesCall().getQuotes();
     this.quo = them;
-    print(them);
     notifyListeners();
   }
 
