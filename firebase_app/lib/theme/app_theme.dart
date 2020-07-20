@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 ThemeData darkTheme = ThemeData(
   backgroundColor: bodyDark,
   primaryColor: textDark,
+  buttonColor: bodyDark,
   textTheme: TextTheme(
    headline1: GoogleFonts.modak(color: textDark),
    headline2: GoogleFonts.parisienne(color: textDark),
@@ -19,6 +20,7 @@ ThemeData darkTheme = ThemeData(
 ThemeData lightTheme = ThemeData(
   backgroundColor: bodyLight,
   primaryColor: textLight,
+  buttonColor: bodyLight,
   textTheme: TextTheme(
    headline1: GoogleFonts.modak(color: textLight),
    headline2: GoogleFonts.parisienne(color: textLight),

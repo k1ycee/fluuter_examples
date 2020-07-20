@@ -12,7 +12,8 @@ class AuthButton extends StatefulWidget {
       {@required this.title,
       this.busy = false,
       @required this.onPressed,
-      this.enabled = true, this.color});
+      this.enabled = true,
+      this.color});
 
   @override
   _AuthButtonState createState() => _AuthButtonState();
@@ -33,17 +34,20 @@ class _AuthButtonState extends State<AuthButton> {
               horizontal: widget.busy ? 10 : 15,
               vertical: widget.busy ? 10 : 10),
           decoration: BoxDecoration(
-            color: widget.enabled ? bodyDark : bodyDark,
+            color: widget.enabled
+                ? darkTheme.primaryColor
+                : darkTheme.primaryColor,
             borderRadius: BorderRadius.circular(5),
           ),
           child: !widget.busy
               ? Text(
                   widget.title,
-                  style: darkTheme.textTheme.headline3,
+                  style: lightTheme.textTheme.headline3,
                 )
               : CircularProgressIndicator(
                   strokeWidth: 2,
-                  valueColor: AlwaysStoppedAnimation(textDark)),
+                  valueColor: AlwaysStoppedAnimation(darkTheme.primaryColor),
+                ),
         ),
       ),
     );

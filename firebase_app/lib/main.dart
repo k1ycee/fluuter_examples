@@ -1,5 +1,8 @@
 import 'package:firebase_app/theme/app_theme.dart';
 import 'package:firebase_app/views/quotes_view.dart';
+import 'package:firebase_app/views/sign_in.dart';
+import 'package:firebase_app/views/sign_up.dart';
+import 'package:firebase_app/views/splash_screen.dart';
 import 'package:firebase_app/views/widgets/button.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Quotes()
+      home: SplashScreen()
     );
   }
 }

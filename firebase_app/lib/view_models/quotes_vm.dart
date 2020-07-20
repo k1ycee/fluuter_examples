@@ -12,5 +12,4 @@ class QuotesViewModel extends ChangeNotifier{
     this.quo = them;
     notifyListeners();
   }
-
 }
